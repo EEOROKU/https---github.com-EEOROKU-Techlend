@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tech lend</title>
+        <link rel="stylesheet" href="../../style1.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+        <link rel="icon" type="image/x-icon" href="../../img/logo_top.png">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <a href="index.html"><img src="../../img/logo_lend2.png" width="500px" height="500px" class="logo" alt="" style="display: block; margin-left: auto; margin-right: auto;"></a>
+        <section id="about-started">
+            <h2>Thank you for renting</h2>
+            
+            <h4>Choose your pickup location below</h4>
+        </section>
+        <section id="form-details">
+            <form action="pickup.php" method="POST" onsubmit="handleSubmit(event)">
+                <span>LEAVE A MESSAGE</span>
+                <h2>Please fill out the form below</h2>
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="E-mail" required>
+                <h4>Pickup Location</h4>
+                <div id="loca">
+                    <div>
+                        <input type="radio" name="location" value="Robertson Library" required>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5517.462467933656!2d-63.14086572244654!3d46.25557057109795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5e52b58dd39cdf%3A0x46f4876def2ae3e!2sRobertson%20Library!5e0!3m2!1sen!2sca!4v1723986711908!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div>
+                        <input type="radio" name="location" value="W.A. Murphy Student Centre" required>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11034.618743501163!2d-63.150953677422294!3d46.25709217590666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5e52b53ee6730d%3A0x2cc935bd189b3123!2sW.A.%20Murphy%20Student%20Centre!5e0!3m2!1sen!2sca!4v1723992011727!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <style>
+                    input[type="radio"] {
+                        width: 20px; /* Adjust the size as needed */
+                        height: 20px; /* Adjust the size as needed */
+                        accent-color: red; /* This sets the color of the radio button */
+                    }
+                </style>
+                <script>
+                    function handleSubmit(event) {
+                        event.preventDefault();
+                        localStorage.setItem('formSubmitted', 'true');
+                    }
+                </script>
+                <button class="normal">Submit</button>
+            </form>
+            
+        </section>
+        <section id="newsletter" class="section-p1 section-m1">
+            <div class="newstext">
+                <h4>Sign Up For Newsletters</h4>
+                <p>Get E-mail updates about our latest computers and <span>special offers.</span></p>
+            </div>
+            <div class="form">
+                <form action="subscribe.php" method="post">
+                    <input type="email" name="email" placeholder="Your email address" required>
+                    <button type="submit" class="normal">Sign Up</button>
+                </form>
+            </div>
+        </section>
+        <footer class="section-p1">
+            <div class="col">
+                <img class="logo" src="../../img/logo_lend2.png" width="100px" height="100px" alt="">
+                <h4>Contact</h4>
+                <p><strong>Address: </strong>Charlottetown, PE, Canada</p>
+                <P><strong>Phone:</strong> (902)3882269</P>
+                <p><strong>Hours: </strong>00:00 - 23:59, Sat - Sun</p>
+                <div class="follow">
+                    <h4>Follow us</h4>
+                    <div class="icon">
+                        <i class="fab fa-facebook -f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h4>About</h4>
+                <a href="#">About us</a>
+                <a href="#">Delivery Information</a>
+                <a href="PrivacyPolicy.html">Privacy Policy</a>
+                <a href="Terms&services.html">Terms & Conditions</a>
+                <a href="#">Contact us</a>
+            </div>
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+            <div class="col install">
+                <p>Secured Payment Gateways</p>
+                <img src="img/pay/pay.png" alt="">
+            </div>
+            <div class="copyright">
+                <p><a href="https://deets.technology/">DEETS</a></p>
+            </div>
+        </footer>
+    </body>
+</html>

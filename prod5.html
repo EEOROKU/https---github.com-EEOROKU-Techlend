@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tech lend</title>
+        <link rel="stylesheet" href="style1.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+        <link rel="icon" type="image/x-icon" href="img/logo_top.png">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <section id="header">
+            <a href="index.html"><img src="img/logo_lend2.png" width="100px" height="100px" class="logo" alt=""></a>
+            <div id="mySidenav" class="sidenav">
+                <ul id="navbar">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="laptop.html">Laptops</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#register">Sign up</a></li>
+                    <li><a href="#foot">Contact</a></li>
+                </ul>
+            </div>
+            <div id="mobile">
+                <i id="bar" style="color: white;" class="fas fa-bars" onclick="openNav()"></i>
+            </div>
+        </section>
+        <section id="pro-details2" class="section-p1">
+            <div class="single-pro-details" id="mob">
+                <h6>Home / Laptops / Toshiba</h6>
+                <h4>Portege</h4>
+            </div>
+        </section>
+        
+        <div class="pricebar" id="mob">
+            <h2>$5/day</h2>
+            <div>
+                <button id="addToCart" class="normal" onclick="window.location.href='Products/prod5/t&c1.html';">Order now</button>
+            </div>
+        </div>
+        <section id="pro-details" class="section-p1">
+            <div class="single-pro-image">
+                <img src="img/laptop/Toshiba/laptop-reconditionne-en-vente-Toshiba-PortageZ30.png" width="100%" id="MainImg" alt="">
+                <div class="small-image-group">
+                    <div class="small-image-col">
+                        <img src="img/laptop/Toshiba/laptop-reconditionne-en-vente-Toshiba-PortageZ30.png" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-image-col">
+                        <img src="img/laptop/Toshiba/Ordinateur-portable-Toshiba-PortageZ30.png" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-image-col">
+                        <img src="img/laptop/Toshiba/Toshiba.png" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-image-col">
+                        <img src="img/laptop/Toshiba/Ordinateur-portable-Toshiba-PortageZ30sss.png" width="100%" class="small-img" alt="">
+                    </div>
+    
+                </div>
+            </div>
+            <div class="single-pro-details">
+                <h6 id="mob2">Home / Laptops / Toshiba</h6>
+                <h4 id="mob2">Portege</h4>
+                <h2 id="mob2">$5 /Day</h2>
+                <p>Select rental period</p>
+
+                <div class="radio-inputs">
+                    <label class="radio">
+                        <input type="radio" name="radio" checked="">
+                        <span class="name">Daily</span>
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="radio">
+                        <span class="name">Weekly</span>
+                    </label>
+                        
+                    <label class="radio">
+                        <input type="radio" name="radio">
+                        <span class="name">Monthly</span>
+                    </label>
+                </div>
+
+                <div id="pay">
+                    <button id="addToCart" class="normal" onclick="window.location.href='Products/prod5/t&c1.html';">Order now</button>
+                </div>
+                <script>
+                    // Get the radio buttons
+                    var radios = document.querySelectorAll('input[name="radio"]');
+                    
+                    // Get the price element
+                    var price = document.querySelector('.single-pro-details h2');
+                    const priceElement = document.querySelector('.pricebar h2');
+
+                    var buy = document.getElementById('pay');
+                    const buyElement = document.querySelector('.pricebar div');
+                    // Add an event listener for the change event on the radio buttons
+                    radios.forEach(function(radio) {
+                        radio.addEventListener('change', function() {
+                            // Switch on the selected value
+                            switch (this.nextElementSibling.textContent) {
+                                case 'Daily':
+                                    price.textContent = '$5/day';
+                                    priceElement.textContent = '$5/day';
+                                    buy.innerHTML ='<button id="addToCart" class="normal" onclick="window.location.href=\'Products/prod5/t&c1.html\';">Order now</button>';
+                                    buyElement.innerHTML ='<button id="addToCart" class="normal" onclick="window.location.href=\'Products/prod5/t&c1.html\';">Order now</button>';
+                                    break;
+                                case 'Weekly':
+                                    price.textContent = '$17/Weekly';
+                                    priceElement.textContent = '$17/Weekly';
+                                    buy.innerHTML ='<button id="addToCart" class="normal" onclick="window.location.href=\'Products/prod5/t&c2.html\';">Order now</button>';
+                                    buyElement.innerHTML ='<button id="addToCart" class="normal" onclick="window.location.href=\'Products/prod5/t&c2.html\';">Order now</button>';
+                                    break;
+                                case 'Monthly':
+                                    price.textContent = '$50/Monthly';
+                                    priceElement.textContent = '$50/Monthly';
+                                    buy.innerHTML ='<button id="addToCart" class="normal" onclick="window.location.href=\'Products/prod5/t&c3.html\';">Order now</button>';
+                                    buyElement.innerHTML ='<button id="addToCart" class="normal" onclick="window.location.href=\'Products/prod5/t&c3.html\';">Order now</button>';
+                                    break;
+                                default:
+                                    price.textContent = '$5/day';
+                                    priceElement.textContent = '$5/day';
+                                    buy.innerHTML ='<button id="addToCart" class="normal" onclick="window.location.href=\'Products/prod5/t&c1.html\';">Order now</button>';
+                                    buy.innerHTML ='<button id="addToCart" class="normal" onclick="window.location.href=\'Products/prod5/t&c1.html\';">Order now</button>';
+                                }
+                        });
+                    });
+                </script>
+                
+                <h4>Product Details</h4>
+                <span>
+                    <ul>
+                        <li>Model: Portege R30t-C</li>
+                        <li>Memory: 8GB</li>
+                        <li>Display: 15.6 inches (1920x1080)</li>
+                        <li>Storage: 250GB SSD</li>
+                        <li>Graphics: Intel® HD Graphics 520</li>
+                        <li>Processor: Intel® Core™ i5-6300U CPU @ 2.40GHz 2.50GHz</li>
+                        <li>Dimensions: 34.04 x 23.76 x 1.15 cm • 1.51 kg</li>
+                        <li>Operating System: Windows</li>
+                        <li>Pen and Touch: Touch screen</li>
+                        <li>System Type: 64-bit operating system, x64-based processor</li>
+                        <li> Keyboard Language: English</li>
+                    </ul>
+                    </span>
+            </div>
+    
+        </section>
+        <section id="about-index" class="section-p1">
+            <div id="abi">
+                <h4>Frequently asked questions</h4>
+                <div id="1" class="a">
+                    <div class="a1" onclick="toggleDropdown('myDropdown1')"><p><b>How does the rental period work?</b></p><hr></div>
+                <div id="myDropdown1" class="dropdown-content"><p>
+                    You can rent for a day, a week or bi-weekly .
+                    When your rental period is over, you have to return your device. You can then rent again and also switch to a longer rental period anytime.
+                    Our rentals are flexible, so you can enjoy tech at your own pace. Learn more about how renting works.
+                </p></div>
+                </div>
+                <div id="2" class="a">
+                <div class="a1"  onclick="toggleDropdown('myDropdown2')"><p><b>What if I damage a device or cause signs of use?</b></p><hr></div>
+                <div id="myDropdown2" class="dropdown-content"><p>
+                    We want you to enjoy our products as though they were yours. Small scratches and normal signs of use will be cleaned after return for free. There are no charges for device errors from the manufacturer.
+                    In case of severe damage, You will be charged $150. 
+                </p></div>
+                </div>
+                <div id="3" class="a">
+                    <div class="a1"  onclick="toggleDropdown('myDropdown3')"><p><b>How can I return the device?</b></p><hr></div>
+                <div id="myDropdown3" class="dropdown-content"><p>
+                    You can return your device for free when your minimum rental period ends.
+                    You just need to reset the device and remove any data. This way, we can rent the device safely to the next person. 
+                    You can drop the device off at our drop-off point by giving it to one of out agents. We will send you drop off info the day before. Learn more about returns.
+                </p></div>
+                </div>
+                <div id="4" class="a">
+                    <div class="a1"  onclick="toggleDropdown('myDropdown4')"><p><b>Is there a cancellation policy?</b></p><hr></div>
+                    <div id="myDropdown4" class="dropdown-content"><p>
+                    If you change your mind and your order hasn’t been processed yet, you can cancel it in your account.
+                    If the order has been processed, we can’t stop it from being dropped. But you can contact our support team and they’ll tell you how to proceed.
+                    If you rent with DEETS Business, there's no 14 days revocation period. But you can contact our business support and ask for a device exchange.
+                    </p></div>
+                </div>
+            </div>
+            <script>
+            function toggleDropdown(id) {
+                var dropdown = document.getElementById(id);
+                dropdown.style.display = dropdown.style.display === "none" ? "block" : "none";
+            }
+            </script>
+        </section>
+        <section id="product1" class="section-p1">
+            <h2>Featured Products</h2>
+            <p> You may also like!</p>
+            <div class="pro-container">
+                <div class="pro" onclick="window.location.href='prod2.html';">
+                    <img src="img/laptop/INSPIRON/Inspiron 15 Laptop_4.avif" alt="">
+    
+                    <div class="des">
+                        <span>DELL</span>
+                        <h5>Inspiron 15</h5>
+                        <p>3000 Series, 15 inch display...</p>
+                        <div class="price"><h4>$5</h4><p> /Daily</p></div>
+                    </div>
+                    <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro" onclick="window.location.href='prod3.html';">
+                    <img src="img/laptop/Latitude E5570/lati.jpg" alt="">
+    
+                    <div class="des">
+                        <span>DELL</span>
+                        <h5>latitude E5570</h5>
+                        <p>15 inch display, Intel Core i7...</p>
+                        <div class="price"><h4>$5</h4><p> /Daily</p></div>
+                    </div>
+                    <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro" onclick="window.location.href='prod4.html';">
+                    <img src="img/laptop/laptop8.png" alt="">
+                    <div class="des">
+                        <span>Lenovo</span>
+                        <h5>ThinkPad X1</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="price"><h4>$5</h4><p> /Daily</p></div>
+                    </div>
+                    <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro" onclick="window.location.href='prod6.html';">
+                    <img src="img/laptop/Elitebook/3967678b-5f5b-4a23-8d96-bab21662328c.__CR0,0,970,600_PT0_SX970_V1___.jpg" alt="">
+    
+                    <div class="des">
+                        <span>HP</span>
+                        <h5>EliteBook</h5>
+                        <p>15 inch display, keyboard - english</p>
+                        <div class="price"><h4>$5</h4><p> /Daily</p></div>
+                    </div>
+                    <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+        </section>
+        <section id="newsletter" class="section-p1 section-m1">
+            <div class="newstext">
+                <h4>Sign Up For Newsletters</h4>
+                <p>Get E-mail updates about our latest computers and <span>special offers.</span></p>
+            </div>
+            <div class="form">
+                <form action="subscribe.php" method="post">
+                    <input type="email" name="email" placeholder="Your email address" required>
+                    <button type="submit" class="normal">Sign Up</button>
+                </form>
+            </div>
+        </section>
+        <footer class="section-p1">
+            <div class="col">
+                <img class="logo" src="img/logo_lend2.png" width="100px" height="100px" alt="">
+                <h4>Contact</h4>
+                <p><strong>Address: </strong>Charlottetown, PE, Canada</p>
+                <P><strong>Phone:</strong> (902)3882269</P>
+                <p><strong>Hours: </strong>08:00 - 20:59, Mon - Sun</p>
+                <div class="follow">
+                    <h4>Follow us</h4>
+                    <div class="icon">
+                        <i class="fab fa-facebook -f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h4>About</h4>
+                <a href="#">About us</a>
+                <a href="#">Delivery Information</a>
+                <a href="PrivacyPolicy.html">Privacy Policy</a>
+                <a href="Terms&services.html">Terms & Conditions</a>
+                <a href="#">Contact us</a>
+            </div>
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+            <div class="col install">
+                <p>Secured Payment Gateways</p>
+                <img src="img/pay/pay.png" alt="">
+            </div>
+            <div class="copyright">
+                <p><a href="https://deets.technology/">DEETS</a></p>
+            </div>
+        </footer>
+        <script>
+            var MainImg = document.getElementById("MainImg");
+            var smallimg = document.getElementsByClassName("small-img");
+    
+            smallimg[0].onclick = function(){
+                MainImg.src = smallimg[0].src;
+                }
+            smallimg[1].onclick = function(){
+                MainImg.src = smallimg[1].src;
+                }
+            smallimg[2].onclick = function(){
+                MainImg.src = smallimg[2].src;
+                }
+            smallimg[3].onclick = function(){
+                MainImg.src = smallimg[3].src;
+                }
+        </script>
+        <script src="script.js"></script>
+    </body>
+</html>

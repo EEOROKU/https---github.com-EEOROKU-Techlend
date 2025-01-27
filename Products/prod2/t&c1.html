@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tech lend</title>
+        <link rel="stylesheet" href="../../style1.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+        <link rel="icon" type="image/x-icon" href="../../img/logo_top.png">
+        <script src="script.js"></script>
+        <style>
+            /* From Uiverse.io by SelfMadeSystem */ 
+            .container {
+            cursor: pointer;
+            }
+
+            .container input {
+            display: none;
+            }
+
+            .container svg {
+            overflow: visible;
+            }
+
+            .path {
+            fill: none;
+            stroke: white;
+            stroke-width: 6;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            transition: stroke-dasharray 0.5s ease, stroke-dashoffset 0.5s ease;
+            stroke-dasharray: 241 9999999;
+            stroke-dashoffset: 0;
+            }
+
+            .container input:checked ~ svg .path {
+            stroke-dasharray: 70.5096664428711 9999999;
+            stroke-dashoffset: -262.2723388671875;
+            }
+
+        </style>
+    </head>
+    <body>
+        <section id="about-started">
+            <h2 style="padding-top: 20px;">Thank you for renting</h2>
+            <img src="../../img/laptop/INSPIRON/Inspiron 15 Laptop_1.avif" alt="">
+            <h4>
+                You have chosen to rent the Touch screen Laptop,
+                Dell Inspiron 15 3000 for $5 for a day
+            </h4>
+            
+            <h4>Please accept the terms and conditions below</h4>
+            /* From Uiverse.io by SelfMadeSystem */ 
+            <label class="container">
+                <p>Yes, I agree to the <a href="../../Terms&services.html">Terms of service.</a></p>
+            <input type="checkbox" id="myCheckbox">
+            <script>
+                document.getElementById('myCheckbox').addEventListener('change', function() {
+                    if (this.checked) {
+                        setTimeout(function() {
+                            window.location.href = 'https://buy.stripe.com/dR69C959CcTh5Ne6oo'; // Replace with your desired URL
+                        }, 1000); // 1000 milliseconds = 1 second
+                    }
+                });
+            </script>
+            <svg viewBox="0 0 64 64" height="2em" width="2em">
+                <path d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16" pathLength="575.0541381835938" class="path"></path>
+            </svg>
+            </label>
+        </section>
+    </body>
+</html>
