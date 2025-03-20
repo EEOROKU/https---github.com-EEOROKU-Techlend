@@ -14,13 +14,17 @@ if ($conn->connect_error) {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['name'];
-    $email = $_POST['email'];
-    $day = $_POST['day'];
-    $time = $_POST['time'];
-    $location = $_POST['location'];
-    $software = $_POST['software'];
+    $overall_experience_rate = $_POST['overall_experience_rate'];
+    $laptop_quality_rate = $_POST['laptop_quality_rate'];
+    $assist = $_POST['assist'];
+    $support_rate = $_POST['support_rate'];
+    $security_rate = $_POST['security_rate'];
+    $suggestions = $_POST['suggestions'];
+    $Recommend = $_POST['Recommend'];
+    $future = $_POST['future'];
+    $comments = $_POST['comments'];
 
-    $sql = "INSERT INTO pickup (name, email, day, time, location, software) VALUES ('$name', '$email','$day', '$time', '$location','$software')";
+    $sql = "INSERT INTO Feedback (name, overall_experience_rate, laptop_quality_rate, assist, support_rate, security_rate, suggestions, Recommend, future, comments) VALUES ('$name', '$overall_experience_rate', '$laptop_quality_rate', '$assist', '$support_rate', '$security_rate', '$suggestions', '$Recommend', '$future', '$comments')";
     
     $url = "https://lend.deets.technology/";
     $font = "https://use.fontawesome.com/releases/v5.15.4/css/all.css";
@@ -52,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <body>
             <div class=\"center-content\">
                 <a href=\"index.html\"><img src=\"img/logo_lend2.png\" width=\"500px\" height=\"500px\" class=\"logo\" alt=\"\"></a>
-                <h1>Rented successfully!!!</h1>
+                <h1>Thanks for the feedback!!!</h1>
                 <p><a href='$url'>HOMEPAGE</a></p>
                 <p>We will keep in touch!</p>
             </div>

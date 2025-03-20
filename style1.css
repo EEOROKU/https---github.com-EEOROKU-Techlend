@@ -945,7 +945,6 @@ footer .copyright{
     padding: 12px 15px;
     outline: none;
     margin-bottom: 20px;
-    border: 1px solid #e1e1e1;
 }
 #form-details form button{
     background-color: red;
@@ -1242,6 +1241,9 @@ footer .copyright{
     #mob2{
         display: none;
     }
+    #about-started h4{
+        font-size:small;
+    }
     #pro-details .single-pro-details h4{
         padding: 40px 0 20px 0;
     }
@@ -1356,3 +1358,121 @@ footer .copyright{
     }
 }
 
+#day {
+    display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+  }
+  
+  #day input[type="radio"] {
+    margin-right: 5px; /* Add some spacing between the radio button and the paragraph */
+  }
+  
+  #day p {
+    margin: 0; /* Remove default paragraph margins */
+    width: 100%;
+  }
+
+
+  /* From Uiverse.io by andrew-demchenk0 */ 
+.rating:not(:checked) > input {
+    position:fixed;
+    appearance: none;
+  }
+  
+  .rating:not(:checked) > label {
+    float: right;
+    cursor: pointer;
+    font-size: 30px;
+    color: #666;
+  }
+  
+  .rating:not(:checked) > label:before {
+    content: '★';
+  }
+  
+  .rating > input:checked + label:hover,
+  .rating > input:checked + label:hover ~ label,
+  .rating > input:checked ~ label:hover,
+  .rating > input:checked ~ label:hover ~ label,
+  .rating > label:hover ~ input:checked ~ label {
+    color: #e58e09;
+  }
+  
+  .rating:not(:checked) > label:hover,
+  .rating:not(:checked) > label:hover ~ label {
+    color: #ff9e0b;
+  }
+  
+  .rating > input:checked ~ label {
+    color: #ffa723;
+  }
+  
+  
+  
+  /* From Uiverse.io by coding-masala */ 
+.radio-buttons {
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+  
+  .radio-button {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .radio-button input[type="radio"] {
+    display: none;
+  }
+  
+  .radio-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #aaa;
+    position: relative;
+    margin-right: 10px;
+  }
+  
+  .radio-circle::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ddd;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .radio-button input[type="radio"]:checked + .radio-circle::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .radio-button:nth-of-type(1) input[type="radio"]:checked + .radio-circle::before {
+    background-color: white;
+  }
+  
+  .radio-button:nth-of-type(2) input[type="radio"]:checked + .radio-circle::before {
+    background-color: white;
+  }
+  
+  .radio-button:nth-of-type(3) input[type="radio"]:checked + .radio-circle::before {
+    background-color: white;
+  }
+  
+  .radio-button:hover .radio-circle {
+    border-color: #555;
+  }
+  
+  .radio-button:hover input[type="radio"]:checked + .radio-circle::before {
+    background-color: #555;
+  }
+  

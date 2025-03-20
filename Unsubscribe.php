@@ -13,14 +13,9 @@ if ($conn->connect_error) {
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST['name'];
     $email = $_POST['email'];
-    $day = $_POST['day'];
-    $time = $_POST['time'];
-    $location = $_POST['location'];
-    $software = $_POST['software'];
 
-    $sql = "INSERT INTO pickup (name, email, day, time, location, software) VALUES ('$name', '$email','$day', '$time', '$location','$software')";
+    $sql = "INSERT INTO Unsubscribe (email) VALUES ('$email')";
     
     $url = "https://lend.deets.technology/";
     $font = "https://use.fontawesome.com/releases/v5.15.4/css/all.css";
@@ -52,9 +47,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <body>
             <div class=\"center-content\">
                 <a href=\"index.html\"><img src=\"img/logo_lend2.png\" width=\"500px\" height=\"500px\" class=\"logo\" alt=\"\"></a>
-                <h1>Rented successfully!!!</h1>
+                <h1>You Are Unsubscribed</h1>
                 <p><a href='$url'>HOMEPAGE</a></p>
-                <p>We will keep in touch!</p>
+                <p>We will not keep in touch! 😔</p>
             </div>
         </body>
         </html>

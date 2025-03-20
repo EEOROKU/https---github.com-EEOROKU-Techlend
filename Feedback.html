@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tech lend</title>
+        <link rel="stylesheet" href="style1.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="icon" type="image/x-icon" href="img/logo_top.png">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <a href="index.html"><img src="img/logo_lend2.png" width="350px" height="350px" class="logo" alt="" style="display: block; margin-left: auto; margin-right: auto;"></a>
+        <section id="about-started" style="padding-top: 0px;">
+            <h2>Customer Feedback Survey</h2>
+            <h4>Thank you for choosing TechLend! Your feedback helps us improve our service and ensure we meet your needs.</br> This survey should take less than 5 minutes to complete.</h4>
+        </section>
+        <section id="form-details">
+            <form action="Feedback.php" method="POST">
+                <span>LEAVE A MESSAGE</span>
+                <h2>Please fill out the form below</h2>
+                <input type="text" name="name" placeholder="Full Name" required>
+                
+                <h4>Overall Experience</h4>
+                <p>How satisfied are you with your overall experience renting a laptop from TechLend?</p>
+                <!-- From Uiverse.io by andrew-demchenk0 --> 
+                <div class="rating">
+                    <input value="5" name="overall_experience_rate" id="star5_overall" type="radio">
+                    <label title="text" for="star5_overall"></label>
+                    <input value="4" name="overall_experience_rate" id="star4_overall" type="radio">
+                    <label title="text" for="star4_overall"></label>
+                    <input value="3" name="overall_experience_rate" id="star3_overall" type="radio" checked="">
+                    <label title="text" for="star3_overall"></label>
+                    <input value="2" name="overall_experience_rate" id="star2_overall" type="radio">
+                    <label title="text" for="star2_overall"></label>
+                    <input value="1" name="overall_experience_rate" id="star1_overall" type="radio">
+                    <label title="text" for="star1_overall"></label>
+                </div>
+                <p style="font-size:xx-small">(Very dissatisfied - Very satisfied)</p>
+            </br>
+                
+                <h4>Laptop Quality</h4>
+                <p>How would you rate the quality and condition of the laptop you received?</p>
+                <div class="rating">
+                    <input value="5" name="laptop_quality_rate" id="star5_quality" type="radio">
+                    <label title="text" for="star5_quality"></label>
+                    <input value="4" name="laptop_quality_rate" id="star4_quality" type="radio">
+                    <label title="text" for="star4_quality"></label>
+                    <input value="3" name="laptop_quality_rate" id="star3_quality" type="radio" checked="">
+                    <label title="text" for="star3_quality"></label>
+                    <input value="2" name="laptop_quality_rate" id="star2_quality" type="radio">
+                    <label title="text" for="star2_quality"></label>
+                    <input value="1" name="laptop_quality_rate" id="star1_quality" type="radio">
+                    <label title="text" for="star1_quality"></label>
+                </div>
+                <p style="font-size:xx-small">(Poor - Excellent)</p>
+                
+                <h4>Customer Support</h4>
+                
+                <p>Did you require any assistance from our team during your rental?</p>
+                <div class="radio-buttons">
+                    <label class="radio-button">
+                        <input type="radio" name="assist" value="yes">
+                        <div class="radio-circle"></div>
+                        <p>Yes</p>
+                    </label>
+                    <label class="radio-button">
+                        <input type="radio" name="assist" value="no">
+                        <div class="radio-circle"></div>
+                        <p>No</p>
+                    </label>
+                </div>
+                <p>If yes, how would you rate the customer support you received?</p>
+                <div class="rating">
+                    <input value="5" name="support_rate" id="star5_support" type="radio">
+                    <label title="text" for="star5_support"></label>
+                    <input value="4" name="support_rate" id="star4_support" type="radio">
+                    <label title="text" for="star4_support"></label>
+                    <input value="3" name="support_rate" id="star3_support" type="radio" checked="">
+                    <label title="text" for="star3_support"></label>
+                    <input value="2" name="support_rate" id="star2_support" type="radio">
+                    <label title="text" for="star2_support"></label>
+                    <input value="1" name="support_rate" id="star1_support" type="radio">
+                    <label title="text" for="star1_support"></label>
+                </div>
+                <p style="font-size:xx-small">(Poor - Excellent)</p>
+
+                <h4 style="padding-top: 20px;">Security & Features</h4>
+                <p>Did you feel confident using the laptop in terms of security and performance?</p>
+                <!-- From Uiverse.io by coding-masala --> 
+                <div class="radio-buttons">
+                    <label class="radio-button">
+                        <input type="radio" name="security_rate" value="Yes">
+                        <div class="radio-circle"></div>
+                        <p>Yes, completely</p>
+                    </label>
+                    <label class="radio-button">
+                        <input type="radio" name="security_rate" value="Somewhat">
+                        <div class="radio-circle"></div>
+                        <p>Somewhat</p>
+                    </label>
+                    <label class="radio-button">
+                        <input type="radio" name="security_rate" value="Not really">
+                        <div class="radio-circle"></div>
+                        <p>Not really</p>
+                    </label>
+                    <label class="radio-button">
+                        <input type="radio" name="security_rate" value="No">
+                        <div class="radio-circle"></div>
+                        <p>No, I had concerns</p>
+                    </label>
+                </div>
+  
+                <h4>Improvement Suggestions</h4>
+                <p>What can we do to improve your experience?</p>
+                <textarea name="suggestions" id="comments" cols="30" rows="5" placeholder="We'd love to hear your ideas for making our service even better. Your feedback is important!"></textarea>
+
+                <h4>Recommendation</h4>
+                <p>Would you recommend TechLend to a friend or colleague?</p>
+                <div class="radio-buttons">
+                    <label class="radio-button">
+                        <input type="radio" name="Recommend" value="yes">
+                        <div class="radio-circle"></div>
+                        <p>Yes</p>
+                    </label>
+                    <label class="radio-button">
+                        <input type="radio" name="Recommend" value="no">
+                        <div class="radio-circle"></div>
+                        <p>No</p>
+                    </label>
+                    <label class="radio-button">
+                        <input type="radio" name="Recommend" value="Not sure">
+                        <div class="radio-circle"></div>
+                        <p>Not sure</p>
+                    </label>
+                </div>
+
+                <h4>Future Rentals</h4>
+                <p>Would you rent from TechLend again?</p>  
+                <div class="radio-buttons">
+                    <label class="radio-button">
+                        <input type="radio" name="future" value="yes">
+                        <div class="radio-circle"></div>
+                        <p>Yes</p>
+                    </label>
+                    <label class="radio-button">
+                        <input type="radio" name="future" value="no">
+                        <div class="radio-circle"></div>
+                        <p>No</p>
+                    </label>
+                    <label class="radio-button">
+                        <input type="radio" name="future" value="Not sure">
+                        <div class="radio-circle"></div>
+                        <p>Not sure</p>
+                    </label>
+                </div>
+
+                <h4>Additional Comments</h4>
+                <p>Is there anything else you would like to share with us?</p>
+                <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Feel free to share any other thoughts or comments you have!"></textarea>
+
+                <style>
+                    input[type="radio"] {
+                        width: 20px; /* Adjust the size as needed */
+                        height: 20px; /* Adjust the size as needed */
+                        accent-color: red; /* This sets the color of the radio button */
+                    }
+                </style>
+                <button class="normal">Submit</button>
+            </form>
+            
+        </section>
+        <section id="newsletter" class="section-p1 section-m1">
+            <div class="newstext">
+                <h4>Sign Up For Newsletters</h4>
+                <p>Get E-mail updates about our latest computers and <span>special offers.</span></p>
+            </div>
+            <div class="form">
+                <form action="subscribe.php" method="post">
+                    <input type="email" name="email" placeholder="Your email address" required>
+                    <button type="submit" class="normal">Sign Up</button>
+                </form>
+            </div>
+        </section>
+        <footer class="section-p1">
+            <div class="col">
+                <img class="logo" src="img/logo_lend2.png" width="100px" height="100px" alt="">
+                <h4>Contact</h4>
+                <p><strong>Address: </strong>Charlottetown, PE, Canada</p>
+                <P><strong>Phone:</strong> (902)3882269</P>
+                <p><strong>Hours: </strong>08:00 - 20:59, Mon - Sun</p>
+                <div class="follow">
+                    <h4>Follow us</h4>
+                    <div class="icon">
+                        <i onclick="window.location.href='https://www.facebook.com/people/DEETS-TECH/61570012171737/#';" class="fab fa-facebook -f"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i onclick="window.location.href='https://www.instagram.com/deets.tech/';" class="fab fa-instagram"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h4>About</h4>
+                <a href="about.html">About us</a>
+                <a href="#">Delivery Information</a>
+                <a href="PrivacyPolicy.html">Privacy Policy</a>
+                <a href="Terms&services.html">Terms & Conditions</a>
+                <a href="#">Contact us</a>
+            </div>
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+            <div class="col install">
+                <p>Secured Payment Gateways</p>
+                <img src="img/pay/pay.png" alt="">
+            </div>
+            <div class="copyright">
+                <p><a href="https://deets.technology/">DEETS</a></p>
+            </div>
+        </footer>
+    </body>
+</html>
