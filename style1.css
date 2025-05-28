@@ -592,9 +592,25 @@ footer .copyright{
 .closebtn {
     display: none;
    }
-
-
+   
 /*Shop page*/
+#page-head{
+    background-image: url(img/Gray\ tech\ Modern\ Twitch\ Banner.png);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+#page-head h2,
+#page-head p{
+    color: red;
+}
+
+/*laptop page*/
 #page-header{
     background-image: url(img/hero.png);
     width: 100%;
@@ -607,7 +623,7 @@ footer .copyright{
     padding: 14px;
 }
 #page-header .contact-header {
-    background-image: url("img/banner.png");
+    background-image: url("img/Brown\ Minimalist\ Contact\ Us\ Seek\ Cover.png");
 }
 #page-header h2,
 #page-header p{
@@ -763,7 +779,7 @@ footer .copyright{
 }
 /* About Page*/
 #page-header.contact-header{
-    background-image: url(img/Banner1.png);
+    background-image: url(img/Black\ &\ White\ Modern\ Business\ LinkedIn\ Banner.png);
 }
 #page-header.about-header{
     background-image: url(img/macbook_laptop_cup_.jpg);
@@ -867,7 +883,7 @@ footer .copyright{
 }
 #about-started div div{
     background-color: rgba(0, 0, 0, 0);
-    padding: 60px;
+    padding: 30px;
     border: 1px solid #fff;
     border-radius: 25px;
     display: flex; flex-direction: column; align-items: center;
@@ -887,10 +903,14 @@ footer .copyright{
 #contact-details{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
 }
-#contact-details .details{
-    width: 40%;
+#contact-details .details > div{
+    display: flex;
+  flex-direction: row; /* Items will be placed in a row (default) */
+  align-items: center; 
+  gap: 20px; /* Space between items */
 }
 #contact-details .details span,
 #form-details form span{
@@ -912,8 +932,9 @@ footer .copyright{
     padding: 10px 0 ;
 }
 #contact-details .details li i{
-    font-size: 14px;
-    padding-right: 22px;
+    font-size: 15px;
+    padding-right: 10px;
+    color: red;
 }
 #contact-details .details li p{
     margin: 0;
@@ -938,6 +959,9 @@ footer .copyright{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+#form-details form span{
+    color: #fff;
 }
 #form-details form input,
 #form-details form textarea{
@@ -1031,7 +1055,7 @@ footer .copyright{
     margin-bottom: 30px;
 }
 #coupon h3,
-#subtotal h3{
+#subtotal h3{ 
     padding-bottom: 15px;
 }
 #coupon input{
@@ -1217,6 +1241,9 @@ footer .copyright{
         align-items: center;
         padding-right:0%;
     }
+    #page-head{
+    height: 20vh;
+}
     #page-header{
         background-image: url(img/hero.png);
         width: 100%;
@@ -1241,8 +1268,9 @@ footer .copyright{
     #mob2{
         display: none;
     }
+    
     #about-started h4{
-        font-size:small;
+        font-size:x-large;
     }
     #pro-details .single-pro-details h4{
         padding: 40px 0 20px 0;
@@ -1340,6 +1368,7 @@ footer .copyright{
         line-height: 100px;
         border-radius: 50px;
         background-color: #f6e8f0;
+        font-size:xx-large;
         font-weight: 600;
         color: red;
         border: 1px solid #e7cce4;
