@@ -16,9 +16,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['name'];
     $email = $_POST['email'];
     $number = $_POST['w_number'];
+    $device = $_POST['device'];
     var_dump($number);
     print_r($number);
-    $sql = "INSERT INTO Waitlist (name, email, number) VALUES ('$name', '$email', '$number')";
+    $sql = "INSERT INTO Waitlist (name, email, number, device) VALUES ('$name', '$email', '$number','$device')";
 
     $url = "https://lend.deets.technology/";
     $font = "https://use.fontawesome.com/releases/v5.15.4/css/all.css";
