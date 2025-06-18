@@ -346,6 +346,92 @@ body {
     font-weight: 700;
     color: red;
 }
+
+
+#product1 .pros-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    flex-wrap:wrap;
+    gap: 20px;
+}
+
+#product1 .pros{
+    width: 45%;
+    min-width: 250px;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+#product1 .pros:hover{
+    box-shadow: 20px 20px 30px rgba(255, 255, 255, 0.06);
+}
+#product1 .pros img{
+    width: 100%;
+    border-radius: 20px;
+}
+#product1 .pros .des{
+    text-align: start;
+    padding: 10px 0;
+}
+#product1 .pros .des span{
+    color: #8b8b8d;
+    font-size: 12px;
+}
+#product1 .pro .des p{
+    color: #a8a8a9;
+    font-size: 12px;
+    padding: 0px;
+}
+#product1 .pros .des h5{
+    padding-top: 7px;
+    color: #fff;
+    font-size: 14px;
+}
+#product1 .pros .des i{
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+#product1 .pros .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: red;
+}
+
+#product1 .pros .ses{
+    text-align: start;
+    padding: 35px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    background: linear-gradient(90deg,rgba(227, 186, 247, 1) 0%, rgba(253, 29, 29, 1) 0%, rgba(252, 176, 69, 1) 100%);
+}
+
+.fixed-button {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.fixed-button button {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
 .price{
     display: flex;
     align-items: center;
@@ -629,6 +715,22 @@ footer .copyright{
 #page-header p{
     color: red;
 }
+
+.senior{
+    background-image: url(img/sen.png);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+.senior h2 ,.senior p{
+    color: red;
+}
+
 #pagination{
     text-align: center;
 }

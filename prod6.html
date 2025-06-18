@@ -16,10 +16,10 @@
                 <ul id="navbar">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                     <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
                     <li><a class="active" href="laptop.html">Laptops</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="#register">Sign up</a></li>
-                    <li><a href="#foot">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <div id="mobile">
@@ -33,7 +33,7 @@
             </div>
         </section>
         <div class="pricebar" id="mob">
-            <h2>$15/day</h2>
+            <h2>$65 /week</h2>
             <div>
                 <button id="addToCart" class="normal" onclick="window.location.href='Products/prod6/t&c1.html';">Order now</button>
             </div>
@@ -60,16 +60,12 @@
             <div class="single-pro-details">
                 <h6 id="mob2">Home / Laptops / HP</h6>
                 <h4 id="mob2">EliteBook</h4>
-                <h2 id="mob2">$15 /Day</h2>
+                <h2 id="mob2">$65 /week</h2>
                 <p>Select rental period</p>
 
                 <div class="radio-inputs">
                     <label class="radio">
                         <input type="radio" name="radio" checked="">
-                        <span class="name">Daily</span>
-                    </label>
-                    <label class="radio">
-                        <input type="radio" name="radio">
                         <span class="name">Weekly</span>
                     </label>
                         
@@ -97,12 +93,6 @@
                         radio.addEventListener('change', function() {
                             // Switch on the selected value
                             switch (this.nextElementSibling.textContent) {
-                                case 'Daily':
-                                    price.textContent = '$15/day';
-                                    priceElement.textContent = '$15/day';
-                                    buy.innerHTML ='<button id="addToCart" class="normal" onclick="window.location.href=\'Products/prod6/t&c1.html\';">Order now</button>';
-                                    buyElement.innerHTML ='<button id="addToCart" class="normal" onclick="window.location.href=\'Products/prod6/t&c1.html\';">Order now</button>';
-                                    break;
                                 case 'Weekly':
                                     price.textContent = '$65/week';
                                     priceElement.textContent = '$65/week';
@@ -116,11 +106,11 @@
                                     buyElement.innerHTML ='<button id="addToCart" class="normal" onclick="window.location.href=\'Products/prod6/t&c3.html\';">Order now</button>';
                                     break;
                                 default:
-                                    price.textContent = '$15/day';
-                                    priceElement.textContent = '$15/day';
-                                    buy.innerHTML ='<button id="addToCart" class="normal" onclick="window.location.href=\'Products/prod6/t&c1.html\';">Order now</button>';
-                                    buyElement.innerHTML ='<button id="addToCart" class="normal" onclick="window.location.href=\'Products/prod6/t&c1.html\';">Order now</button>';
-                                }
+                                    price.textContent = '$65/week';
+                                    priceElement.textContent = '$65/week';
+                                    buy.innerHTML ='<button id="addToCart" class="normal" onclick="window.location.href=\'Products/prod6/t&c2.html\';">Order now</button>';
+                                    buyElement.innerHTML ='<button id="addToCart" class="normal" onclick="window.location.href=\'Products/prod6/t&c2.html\';">Order now</button>';
+                            }
                         });
                     });
                 </script>
@@ -262,7 +252,7 @@
         </section>
         <footer class="section-p1">
             <div class="col">
-                <img class="logo" src="img/logo_lend2.png" width="100px" height="100px" alt="">
+                <img class="logo" src="img/logo_lend1.png" width="150px" height="100px" alt="">
                 <h4>Contact</h4>
                 <p><strong>Address: </strong>Charlottetown, PEI, Canada</p>
                 <P><strong>Phone:</strong> (902)3882269</P>
@@ -270,6 +260,7 @@
                 <div class="follow">
                     <h4>Follow us</h4>
                     <div class="icon">
+
                         <i onclick="window.location.href='https://www.facebook.com/people/DEETS-TECH/61570012171737/#';" class="fab fa-facebook -f"></i>
                         <i class="fa-brands fa-x-twitter"></i>
                         <i onclick="window.location.href='https://www.instagram.com/deets.tech/';" class="fab fa-instagram"></i>
@@ -284,7 +275,7 @@
                 <a href="#">Delivery Information</a>
                 <a href="PrivacyPolicy.html">Privacy Policy</a>
                 <a href="Terms&services.html">Terms & Conditions</a>
-                <a href="#">Contact us</a>
+                <a href="contact.html">Contact us</a>
             </div>
             <div class="col">
                 <h4>My Account</h4>
